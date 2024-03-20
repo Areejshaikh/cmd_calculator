@@ -3,7 +3,7 @@ import chalk from  "chalk"
 
 
 const user_output = await inquirer.prompt([
-  {
+  { 
     message: "Enter your first Number",
     type: "number",
     name: "firstNumber",
@@ -36,3 +36,6 @@ if (user_output.oprators === "addition") {
 } else {
   console.log("Please Enter your valid number");
 }
+
+console.log("Code end");
+
