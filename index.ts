@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 import inquirer from "inquirer";
 import chalk from  "chalk"
 
@@ -21,7 +22,7 @@ const user_output = await inquirer.prompt([
   },
 ]);
 if (user_output.oprators === "addition") {
-  console.log(chalk.red `your output is:${user_output.firstNumber + user_output.secondNumber}`);
+  console.log(chalk.gray `your output is:${user_output.firstNumber + user_output.secondNumber}`);
 } else if (user_output.oprators === "subtraction") {
   console.log(chalk.yellowBright `your output is:${user_output.firstNumber - user_output.secondNumber}`
   );

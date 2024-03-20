@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 import inquirer from "inquirer";
 import chalk from "chalk";
 const user_output = await inquirer.prompt([
@@ -33,4 +34,4 @@ else if (user_output.oprators === "division") {
 else {
     console.log("Please Enter your valid number");
 }
-console.log("Code end");
+console.log(" Code end");
